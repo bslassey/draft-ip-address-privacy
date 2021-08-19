@@ -1,0 +1,360 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2021-08-19T00:25:03.406874+00:00",
+  "repo": "ShivanKaul/draft-ip-address-privacy",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [
+    {
+      "number": 8,
+      "id": "MDU6SXNzdWU5NzMwNjk0MjQ=",
+      "title": "Define cross-site versus same-site privacy risks",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/issues/8",
+      "state": "OPEN",
+      "author": "bslassey",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Fingerprinting in general and IP addresses in particular can be used to identify users both across sites and within a single website. IP Privacy and anti-fraud and abuse solutions will vary greatly based on which of these privacy risks we are attempting to address.\r\n\r\nMy suggestion is to focus on preventing cross-site re identification and tracking but to keep same-site re-identification and tracking out of scope for this document. WDYT?",
+      "createdAt": "2021-08-17T21:11:49Z",
+      "updatedAt": "2021-08-17T21:11:49Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 9,
+      "id": "MDU6SXNzdWU5NzM2OTM4OTk=",
+      "title": "Define categories of anti-abuse patterns",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/issues/9",
+      "state": "OPEN",
+      "author": "bslassey",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "At a very broad level, I believe there are two forms of abuse against a single system that an IP privacy solution must consider. The first is a small set of attackers pretending to be many to prevent their abuse from being detected and blocked, which is generally the case when it comes to Denial of Service attacks (which is why distributed Denial of Service is a useful attack pattern). \r\n\r\nThe second category is when an attacker is attempting to impersonate a victim. This is the case with credential theft in general and can be protected against with technologies such as WebAuthn and techniques such as 2FA. \r\n\r\nBeing specific about the types of abuse will help us determine the types of preventative measures that may be appropriate.\r\n\r\nI will note that these two categories are intentionally scoped to a single system. There is a third broad category where independant systems can use IP addresses as identifiers to warn others of threats. rfc5782 is one example of a standardized system to share such threat intelligence. This would also include tying an IP address to a real world identity.\r\n\r\nAnd of course if there are other broad categories I'm missing, we should identify and define them.",
+      "createdAt": "2021-08-18T13:54:23Z",
+      "updatedAt": "2021-08-18T13:54:23Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 10,
+      "id": "MDU6SXNzdWU5NzM2OTQyOTk=",
+      "title": "Add rough geolocation as use case for IP",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/issues/10",
+      "state": "OPEN",
+      "author": "bslassey",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "IP addresses are used productively in the case of tailoring content to the user's rough geolocation.  There are probably many uses of this rough geolocation information, but two that come immediately to mind are conforming to local laws and providing locally relevant content (for example: a merchant's website showing the nearest physical store, a search engine showing local coffee shops when a user searches for \"coffee shop\" or a news site showing locally relevant news). ",
+      "createdAt": "2021-08-18T13:54:45Z",
+      "updatedAt": "2021-08-18T13:54:45Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "MDExOlB1bGxSZXF1ZXN0Njc0NTkxMTYw",
+      "title": "Propose slightly different structure for initial draft",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/pull/1",
+      "state": "MERGED",
+      "author": "saradickinson",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2021-06-21T14:12:20Z",
+      "updatedAt": "2021-06-22T17:08:30Z",
+      "baseRepository": "ShivanKaul/draft-ip-address-privacy",
+      "baseRefName": "main",
+      "baseRefOid": "5eb8184f0367960246c27ed8e5fddd2b816db483",
+      "headRepository": "ShivanKaul/draft-ip-address-privacy",
+      "headRefName": "initial_draft",
+      "headRefOid": "fa6a2eb158ff336da3f1e11dc5c55210d22615a0",
+      "closedAt": "2021-06-22T17:08:30Z",
+      "mergedAt": "2021-06-22T17:08:30Z",
+      "mergedBy": "ShivanKaul",
+      "mergeCommit": {
+        "oid": "253cb23a6cf7e1e7f33a069717020949ac28a323"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3Njg4NTMwNzc1",
+          "commit": {
+            "abbreviatedOid": "e41d80a"
+          },
+          "author": "ShivanKaul",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "This makes sense to me - I think we should also change the draft name to be *less* general i.e. draft-ip-address-privacy-considerations",
+          "createdAt": "2021-06-21T14:58:14Z",
+          "updatedAt": "2021-06-21T14:58:14Z",
+          "comments": []
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3Njg5NzgzNDY4",
+          "commit": {
+            "abbreviatedOid": "a024e7e"
+          },
+          "author": "ShivanKaul",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "I made a couple of minor changes",
+          "createdAt": "2021-06-22T17:08:24Z",
+          "updatedAt": "2021-06-22T17:08:24Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "id": "MDExOlB1bGxSZXF1ZXN0NjgxNDEyMzc1",
+      "title": "Edits",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/pull/2",
+      "state": "MERGED",
+      "author": "sysrqb",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Some small edits and started filling in some of the empty sections. I'm happy to get feedback/suggestions on improvements.",
+      "createdAt": "2021-07-01T03:32:12Z",
+      "updatedAt": "2021-07-12T16:53:24Z",
+      "baseRepository": "ShivanKaul/draft-ip-address-privacy",
+      "baseRefName": "main",
+      "baseRefOid": "514b47d2884a0991bc39bb529de7c987541463c3",
+      "headRepository": "sysrqb/draft-ip-address-privacy",
+      "headRefName": "edits",
+      "headRefOid": "26dab3d1f2bded60f8cb8c8df2c25e08c3801d40",
+      "closedAt": "2021-07-12T16:53:24Z",
+      "mergedAt": "2021-07-12T16:53:24Z",
+      "mergedBy": "saradickinson",
+      "mergeCommit": {
+        "oid": "e97c49ab03c295eebb1dc4310e1e1d6db0318e6c"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 3,
+      "id": "MDExOlB1bGxSZXF1ZXN0Njg4MDkxNTY2",
+      "title": "Edits2",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/pull/3",
+      "state": "MERGED",
+      "author": "sysrqb",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "5748b25 was tagged as `draft-ip-address-privacy-considerations-00`. 2576050 fills in some more sections and attempts making the existing text more understandable.",
+      "createdAt": "2021-07-12T18:57:22Z",
+      "updatedAt": "2021-07-23T16:44:24Z",
+      "baseRepository": "ShivanKaul/draft-ip-address-privacy",
+      "baseRefName": "main",
+      "baseRefOid": "e97c49ab03c295eebb1dc4310e1e1d6db0318e6c",
+      "headRepository": "sysrqb/draft-ip-address-privacy",
+      "headRefName": "edits2",
+      "headRefOid": "257605041aa21f795ecb333ee24b4137f2c40b3e",
+      "closedAt": "2021-07-23T16:44:24Z",
+      "mergedAt": "2021-07-23T16:44:24Z",
+      "mergedBy": "ShivanKaul",
+      "mergeCommit": {
+        "oid": "64a4b11ee98ef1a9e0774f962b12433b9bd94df2"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NzA0NTA5NjE0",
+          "commit": {
+            "abbreviatedOid": "2576050"
+          },
+          "author": "chris-wood",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2021-07-12T20:22:51Z",
+          "updatedAt": "2021-07-12T20:22:51Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "id": "MDExOlB1bGxSZXF1ZXN0Njk0MjE0OTgy",
+      "title": "Luigi's contribution",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/pull/4",
+      "state": "MERGED",
+      "author": "ggx",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Hereafter a list of the main changes. IMHO with these changes the draft is in good shape to ask PEARG community if the document is going in the right direction. Hopefully it is and we can later add more text to the different sections. \r\n\r\n- Added several references\r\n- Added subsection 3.3 on law issues\r\n- Bootstrapped section 3.1\r\n- Added text section 3.2\r\n- Proposed content for 3.4\r\n- Added text and revised section 4.1",
+      "createdAt": "2021-07-21T09:40:27Z",
+      "updatedAt": "2021-07-26T09:38:15Z",
+      "baseRepository": "ShivanKaul/draft-ip-address-privacy",
+      "baseRefName": "main",
+      "baseRefOid": "64a4b11ee98ef1a9e0774f962b12433b9bd94df2",
+      "headRepository": "ggx/draft-ip-address-privacy",
+      "headRefName": "main",
+      "headRefOid": "ff7b7f8bd3d539bc44c8202276088041da4d14a2",
+      "closedAt": "2021-07-26T09:38:14Z",
+      "mergedAt": "2021-07-26T09:38:14Z",
+      "mergedBy": "saradickinson",
+      "mergeCommit": {
+        "oid": "78699b7850318e0fdddfabd03166acb9a6d3e304"
+      },
+      "comments": [
+        {
+          "author": "saradickinson",
+          "authorAssociation": "COLLABORATOR",
+          "body": "@ggx Thanks for this PR! It seems Matthew did a PR just before you so we've merged his and there are now a few conflicts. Would you be able to take a look and fix those up? ",
+          "createdAt": "2021-07-23T16:50:19Z",
+          "updatedAt": "2021-07-23T16:50:19Z"
+        },
+        {
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Hi,\n\nI\u2019ll have a look during the weekend\n\nCiao\n\nL.\n\n\n> On 23 Jul 2021, at 18:52, Sara Dickinson ***@***.***> wrote:\n> \n> \n> @saradickinson commented on this pull request.\n> \n> In draft-ip-address-privacy-considerations.md <https://github.com/ShivanKaul/draft-ip-address-privacy/pull/4#discussion_r675704013>:\n> \n> >  \n> -Commerical VPNs offer a layer of indirection between the user and the destination, however if the VPN endpoint's IP address is static then this simply substitutes one address for another. In addition, commerial VPNs replace tracking across sites with a single company that may track their users' activities.\n> +## Mitigations for IP address tracking\n> Most conflicts with Matthew's update are in this section\n> \n> \u2014\n> You are receiving this because you were mentioned.\n> Reply to this email directly, view it on GitHub <https://github.com/ShivanKaul/draft-ip-address-privacy/pull/4#pullrequestreview-713912398>, or unsubscribe <https://github.com/notifications/unsubscribe-auth/AB5HQCUYSTE7ERKOQAIDRHTTZGM4HANCNFSM5AXSZNRA>.\n> \n\n",
+          "createdAt": "2021-07-24T06:43:55Z",
+          "updatedAt": "2021-07-24T06:43:55Z"
+        },
+        {
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Hi,\n\nI solved all the conflicts adjusting the text as needed.\nthe repository is now up to date and clean.\n\nCiao\n\nL.\n\n\n> On 24 Jul 2021, at 08:43, Luigi Iannone ***@***.***> wrote:\n> \n> Hi,\n> \n> I\u2019ll have a look during the weekend\n> \n> Ciao\n> \n> L.\n> \n> \n>> On 23 Jul 2021, at 18:52, Sara Dickinson ***@***.*** ***@***.***>> wrote:\n>> \n>> \n>> @saradickinson commented on this pull request.\n>> \n>> In draft-ip-address-privacy-considerations.md <https://github.com/ShivanKaul/draft-ip-address-privacy/pull/4#discussion_r675704013>:\n>> \n>> >  \n>> -Commerical VPNs offer a layer of indirection between the user and the destination, however if the VPN endpoint's IP address is static then this simply substitutes one address for another. In addition, commerial VPNs replace tracking across sites with a single company that may track their users' activities.\n>> +## Mitigations for IP address tracking\n>> Most conflicts with Matthew's update are in this section\n>> \n>> \u2014\n>> You are receiving this because you were mentioned.\n>> Reply to this email directly, view it on GitHub <https://github.com/ShivanKaul/draft-ip-address-privacy/pull/4#pullrequestreview-713912398>, or unsubscribe <https://github.com/notifications/unsubscribe-auth/AB5HQCUYSTE7ERKOQAIDRHTTZGM4HANCNFSM5AXSZNRA>.\n>> \n> \n\n",
+          "createdAt": "2021-07-24T11:57:14Z",
+          "updatedAt": "2021-07-24T11:57:14Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NzEzOTExNTM4",
+          "commit": {
+            "abbreviatedOid": "6ec113a"
+          },
+          "author": "saradickinson",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2021-07-23T16:50:55Z",
+          "updatedAt": "2021-07-23T16:50:56Z",
+          "comments": [
+            {
+              "originalPosition": 5,
+              "body": "I think we should leave the doc name as `draft-ip-address-privacy-considerations` unless you had a specific reason for changing it?",
+              "createdAt": "2021-07-23T16:50:55Z",
+              "updatedAt": "2021-07-23T16:50:56Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NzEzOTEyMzk4",
+          "commit": {
+            "abbreviatedOid": "6ec113a"
+          },
+          "author": "saradickinson",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2021-07-23T16:52:07Z",
+          "updatedAt": "2021-07-23T16:52:07Z",
+          "comments": [
+            {
+              "originalPosition": 124,
+              "body": "Most conflicts with Matthew's update are in this section",
+              "createdAt": "2021-07-23T16:52:07Z",
+              "updatedAt": "2021-07-23T16:52:07Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NzE0MTg3MzE1",
+          "commit": {
+            "abbreviatedOid": "6ec113a"
+          },
+          "author": "chris-wood",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2021-07-24T00:28:29Z",
+          "updatedAt": "2021-07-24T00:28:29Z",
+          "comments": [
+            {
+              "originalPosition": 5,
+              "body": "I think the  \"-latest\" suffix is necessary for MT's tooling to produce the correct document version when compiling. ",
+              "createdAt": "2021-07-24T00:28:29Z",
+              "updatedAt": "2021-07-24T00:28:29Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NzE0MjI4ODky",
+          "commit": {
+            "abbreviatedOid": "ff7b7f8"
+          },
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2021-07-24T11:55:37Z",
+          "updatedAt": "2021-07-24T11:55:38Z",
+          "comments": [
+            {
+              "originalPosition": 124,
+              "body": "Hi,\r\n\r\nI went over the conflicts and solved them adjusting the text as needed.\r\n\r\nCiao\r\n\r\nL.\r\n \r\n \r\n ",
+              "createdAt": "2021-07-24T11:55:37Z",
+              "updatedAt": "2021-07-24T11:55:38Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
