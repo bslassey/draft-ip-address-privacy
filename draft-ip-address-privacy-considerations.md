@@ -20,11 +20,17 @@ author:
     organization: The Tor Project
     email: sysrqb@torproject.org
  -
+    ins: B. Lassey
+    name: Bradford Lassey
+    organization: Google
+    email: lassey@chromium.org
+ -
   ins: L. Iannone
   name: Luigi Iannone
   org: Huawei Technologies France S.A.S.U
   abbrev: Huawei
   email: luigi.iannone@huawei.com
+ 
 
 normative:
 
