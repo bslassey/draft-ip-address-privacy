@@ -5,12 +5,12 @@
 Network Working Group                                          M. Finkel
 Internet-Draft                                                Apple Inc.
 Intended status: Informational                                 B. Lassey
-Expires: 29 January 2024                                          Google
+Expires: 17 February 2024                                         Google
                                                               L. Iannone
                                                                   Huawei
                                                               J. B. Chen
                                                                   Google
-                                                            28 July 2023
+                                                          16 August 2023
 
 
                    IP Address Privacy Considerations
@@ -53,7 +53,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 29 January 2024.
+   This Internet-Draft will expire on 17 February 2024.
 
 Copyright Notice
 
@@ -345,28 +345,29 @@ Table of Contents
 
    In a web context, IP Addresses can be used to link a user's activity
    both within a single site and across multiple sites.  Users may want
-   to have a single site recognize them withing a browsing session or
+   to have a single site recognize them within a browsing session or
    across browsing sessions and in fact cookies are a mechanism to do
    exactly that.  If IP Addresses are only stable within the context a
    first-party cookie, they don't represent any additional privacy
    threat.  However, since clients are currently in control of their
-   first cookies, abusive clients can delete their cookies in an effort
-   to evade detection.  IP Addresses currently allow counter-abuse
-   detection to track many such abusive clients across cookie deletions.
-   However, IP Addresses, along with other fingerprinting techniques,
-   also allow the linking of client identity across sites in the web
-   context.  Third-party cookies can also allow such a capability, but
-   in a more limited manner as practically speaking no one third party
-   cookie is present across all websites.  Also, browsers are
-   increasingly putting limits on the ability to use third party cookies
-   in order to combat these threats [PRIVACY_TEST_3P_COOKIES].  Other
-   network related information can also be used to link client identity
-   across sites, but that is increasingly being seen as a bug to be
-   addressed by browsers through network state partitioning (e.g.
-   [MOZ_NET_PART], [BRAVE_NET_PART], [CHROME_NET_PART]).  Finally, the
-   above discussion uses the web and browsers as a concrete example, but
-   this generalizes to other contexts such as linking user identity
-   across VoIP solutions, DNS resolvers, video streaming platforms etc.
+   first-party cookies, abusive clients can delete their cookies in an
+   effort to evade detection.  IP Addresses currently allow counter-
+   abuse detection to track many such abusive clients across cookie
+   deletions.  However, IP Addresses, along with other fingerprinting
+   techniques, also allow the linking of client identity across sites in
+   the web context.  Third-party cookies can also allow such a
+   capability, but in a more limited manner as practically speaking no
+   one third-party cookie is present across all websites.  Also,
+   browsers are increasingly putting limits on the ability to use third-
+   party cookies in order to combat these threats [_3P_COOKIES_CHROME]
+   and [_3P_COOKIES_WEBKIT].  Other network related information can also
+   be used to link client identity across sites, but that is
+   increasingly being seen as a bug to be addressed by browsers through
+   network state partitioning (e.g.  [MOZ_NET_PART], [BRAVE_NET_PART],
+   [CHROME_NET_PART]).  Finally, the above discussion uses the web and
+   browsers as a concrete example, but this generalizes to other
+   contexts such as linking user identity across VoIP solutions, DNS
+   resolvers, video streaming platforms etc.
 
 3.3.  IP Privacy Protection and Law
 
@@ -797,11 +798,6 @@ Table of Contents
               <http://www.npc.gov.cn/npc/c30834/202108/
               a8c4e3672c74491a80b53a172bb753fe.shtml>.
 
-   [PRIVACY_TEST_3P_COOKIES]
-              "Tracking cookie protection tests", n.d.,
-              <https://privacytests.org/nightly-private.html#:~:text=Tra
-              cking%20cookie%20protection%20tests>.
-
    [TOR]      "The Tor Project", n.d., <https://www.torproject.org/>.
 
    [TRUSTTOKEN]
@@ -843,6 +839,17 @@ Table of Contents
               Proceedings of The Web Conference 2020,
               DOI 10.1145/3366423.3380161, April 2020,
               <https://doi.org/10.1145/3366423.3380161>.
+
+   [_3P_COOKIES_CHROME]
+              "Building a more private web: A path towards making third
+              party cookies obsolete", n.d.,
+              <https://blog.chromium.org/2020/01/building-more-private-
+              web-path-towards.html>.
+
+   [_3P_COOKIES_WEBKIT]
+              "Tracking Prevention in WebKit: The Default Cookie
+              Policy", n.d., <https://webkit.org/tracking-
+              prevention/#the-default-cookie-policy>.
 
 Acknowledgments
 
